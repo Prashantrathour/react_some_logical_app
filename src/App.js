@@ -3,11 +3,12 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './page/Home';
 import Timer from './components/Timer';
+import MainRoute from './MainRoute';
 
 function App() {
   return (
 <div className="">
-      <Timer/>
+      <MainRoute/>
     </div>
   );
 }

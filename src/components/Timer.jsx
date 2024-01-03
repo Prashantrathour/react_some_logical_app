@@ -1,5 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ImHome } from "react-icons/im";
 function Timer() {
   let [sec, setsec] = useState(0);
   let [min, setmin] = useState(0);
@@ -41,7 +43,12 @@ function Timer() {
   }, [sec,min,hr,start]);
   
   return (
-    <div className="w-full flex justify-center border h-screen items-center bg-pink-300">
+    <div className="w-full  h-screen items-center bg-pink-300 overflow-y-hidden">
+        <nav className="flex justify-end p-4 text-2xl font-bold from-teal-500 to-red-500">
+        <Link to={"/"}><ImHome /></Link>
+        </nav>
+
+    <div className="w-full flex justify-center  h-full items-cente items-center">
       <div className=" w-80 h-80  p-4 container shadow-2xl  shadow-current flex flex-col justify-between rounded-xl bg-pink-700">
         <div className="flex justify-between flex-col items-center  h-1/2">
         <p className="text-3xl  text-fuchsia-300">Stopwatch</p>
@@ -72,6 +79,8 @@ function Timer() {
           
         </div>
       </div>
+    </div>
+
     </div>
   );
 }
