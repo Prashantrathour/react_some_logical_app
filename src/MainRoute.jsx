@@ -4,10 +4,14 @@ import {Routes,Route} from "react-router-dom"
 import Timer from './components/Timer'
 import LandingPage from './page/LandingPage'
 import Navbar from './components/Navbar'
+import Displaymovie from './page/Displaymovie'
+import OTPBoxes from './page/OTPBoxes'
 function MainRoute() {
   return (
     <Routes>
         <Route path="/" element={<LandingPage/>}/>
+        <Route path="/dispalymovie" element={<Displaymovie/>}/>
+        <Route path="/otp" element={<OTPBoxes/>}/>
         <Route path="/home" element={<>
         <Navbar/>
         <Home/>
