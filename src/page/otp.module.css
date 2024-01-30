@@ -1,17 +1,17 @@
-@keyframes lefttoright {
+/* @keyframes lefttoright {
     0%{
         transform: translateX(0);
     }
     100%{
         transform: translateX(100%);
     }
-}
+} */
  h4{
-border: 1px solid red;
 
-    animation-name: lefttoright;
+
+    
     animation-iteration-count: infinite;
     animation-duration: 3s;
     font-style: italic;
-    background: #000;
+    ;
  }

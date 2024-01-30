@@ -63,7 +63,7 @@ function Displaymovie() {
           
         </div>
       </div>
-    {!loading?  <div onClick={()=>setclosesearch(true)} className="mt-4 w-full grid m-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 transition-all gap-2">
+    {!loading?  <div onClick={()=>setclosesearch(true)} className="mt-4 w-full grid m-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-2">
         {movies?.map((movie)=>
             <div key={movie.id} className="shadow-lg shadow-orange-400 rounded-lg w-full mt-2">
                 <div className="w-[80%] flex m-auto justify-center items-center">
